@@ -8,10 +8,20 @@
     <title>Famoso Churros Filmes</title>
   </head>
   <body>
-    <h1 class="title">Famoso Churros Filmes <img src="src/images/favicon-32x32.png" alt=""></h1>
-
+<header>
+      <div class="title">
+        <h1>Famoso Churros Filmes <img src="src/images/favicon-32x32.png" alt=""></h1>
+      </div>
+      <ul>
+        <a href="#"><li>Inicio</li></a>
+        <a href="clima.html"><li>Clima</li></a>
+        <a href="#"><li>Sobre</li></a>
+        <a class="inscreva-se-btn" href="#"><li>Já tem uma conta?</li></a>
+      </ul>
+  </header>
+  
     <div class="subTitle">
-      <h2 class="galo">Bem-Vindo</h2>
+      <h2 class="galo"><span class="saudacao"></span>, bem-vindo!</h2>
       <form>
         <input id="pesquisa" placeholder="Digite o nome do filme" />
         <button>Pesquisa</button>
@@ -20,5 +30,6 @@
 
     <div class="lista"></div>
     <script src="/src/js/script.js"></script>
+    <script src="src/js/saudacao.js"></script>
   </body>
 </html>

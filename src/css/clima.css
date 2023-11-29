@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background: rgb(10, 102, 109);
+
+}
+
+.galo{
+    text-align: center;
+    margin-top: 140px;
+    margin-bottom: -200px;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(80deg, rgb(129, 40, 212), rgb(37, 50, 230));
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    
+  }
+
+  a{
+    color: white;
+    margin-left: 5px;
+  }
+
+  a:hover{
+    color: #E86D24;
+    transition: 0.3s all;
+  }
+
+  li{
+    display: inline-block;
+    
+  }
+
+  .inscreva-se-btn{
+    border: 2px solid #E86D24;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .inscreva-se-btn:hover{
+    background: #E86D24;
+    color: white;
+    transition: 0.3s all;
+  }
+
+main{
+    height: 100vh;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-maior{
+    background: linear-gradient(80deg,rgb(37, 50, 230), rgb(129, 40, 212));
+    border-radius: 25px;
+    padding: 20px;
+    width: 50%;
+    height: 250px;
+    box-shadow: 3px 3px 8px rgb(49, 49, 49);
+}
+
+.caixa-media{
+   margin-top: 30px;
+}
+
+.caixa-maior input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: #7c7c7c6c;
+    color: white;
+    width: calc(100% - 50px);
+}
+
+.botao-busca{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    float: right;
+    background: #7c7c7c2b;
+}
+
+.botao-busca:hover{
+    background: #E86D24;
+}
+
+.img-busca{
+    width: 22px;
+}
+
+.cidade{
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.temp{
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+}
+
+.caixa-menor{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+    gap: 20px;
+}
+
+.umidade{
+    color:white;
+    margin-top: 20px;
+}
+
+.texto-previsao{
+    text-transform: capitalize;
+}

@@ -1,5 +1,6 @@
 const apiKey = '48d31722';
 
+const saudacao = document.querySelector('.saudacao');
 const frmpesquisa = document.querySelector("form");
 
 
@@ -36,4 +37,19 @@ frmpesquisa.onsubmit = (ev) => {
         lista.appendChild(item)
 
     })
+}
+
+setInterval(relogio, 1000)
+
+function relogio(){
+    let horadehoje = new Date()
+    let hora = horadehoje.getHours()
+
+    if(hora > 5 && hora < 12){
+        saudacao.innerText='Bom Dia'
+    }else if(hora >= 12 && hora < 18){
+        saudacao.innerText= 'Boa Tarde'
+    }else{
+        saudacao.innerText= 'Boa Noite'
+    }
 }
