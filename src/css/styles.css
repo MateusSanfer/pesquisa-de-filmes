@@ -1,21 +1,21 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  list-style: none;
+:root{
+  --fundo:rgb(10, 102, 109);
+  --gradient-header: linear-gradient(80deg, rgb(129, 40, 212), rgb(37, 50, 230));
+  --colorChurros: #E86D24;
 }
 
 body {
   background: rgb(10, 102, 109);
+}
+body {
+  background: rgb(39, 41, 41);
 }
 header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(80deg, rgb(129, 40, 212), rgb(37, 50, 230));
+  background: var(--gradient-header);
   color: white;
   padding: 10px;
   position: fixed;
@@ -39,15 +39,27 @@ li{
 }
 
 .inscreva-se-btn{
-  border: 2px solid #E86D24;
+  border: 2px solid var(--colorChurros);
   padding: 10px;
   border-radius: 5px;
 }
 
 .inscreva-se-btn:hover{
-  background: #E86D24;
+  background: var(--colorChurros);
   color: white;
   transition: 0.3s all;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.churros{
+  width: 60px;
+  height: 60px;
 }
 
 .subTitle {
@@ -104,7 +116,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #E86D24;
+  background-color: var(--colorChurros);
 }
 
 div.lista {
@@ -136,7 +148,4 @@ div.item img {
   width: 100%;
 }
 
-.churros{
-  width: 40px;
-  height: 40px;
-}
+
