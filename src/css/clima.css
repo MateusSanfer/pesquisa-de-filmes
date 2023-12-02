@@ -1,148 +1,143 @@
-
-body{
-    background: rgb(30, 34, 34);
-
+body {
+  background: rgb(30, 34, 34);
 }
 
-.galo{
-    text-align: center;
-    margin-top: 140px;
-    margin-bottom: -200px;
-    color: aliceblue;
-    font-size: 30px;
+.galo {
+  text-align: center;
+  margin-top: 140px;
+  margin-bottom: -200px;
+  color: aliceblue;
+  font-size: 30px;
 }
 
-
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(80deg, rgb(129, 40, 212), rgb(37, 50, 230));
-    color: white;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    
-  }
-
-  a{
-    color: white;
-    margin-left: 5px;
-  }
-
-  a:hover{
-    color: #E86D24;
-    transition: 0.3s all;
-  }
-
-  li{
-    display: inline-block;
-    
-  }
-
-  .inscreva-se-btn{
-    border: 2px solid #E86D24;
-    padding: 10px;
-    border-radius: 5px;
-  }
-
-  .inscreva-se-btn:hover{
-    background: #E86D24;
-    color: white;
-    transition: 0.3s all;
-  }
-
-  .title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .churros{
-    width: 60px;
-    height: 60px;
-  }
-
-main{
-    height: 100vh;
-    margin-top: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(80deg, rgb(129, 40, 212), rgb(37, 50, 230));
+  color: white;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
-.caixa-maior{
-    background: linear-gradient(80deg,rgb(37, 50, 230), rgb(129, 40, 212));
-    border-radius: 25px;
-    padding: 20px;
-    width: 50%;
-    height: 250px;
-    box-shadow: 3px 3px 8px rgb(49, 49, 49);
+a {
+  color: white;
+  margin-left: 5px;
 }
 
-.caixa-media{
-   margin-top: 30px;
+a:hover {
+  color: #e86d24;
+  transition: 0.3s all;
 }
 
-.caixa-maior input{
-    border: none;
-    outline: none;
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 18px;
-    background-color: #6b6b6b6c;
-    color: white;
-    font-weight: 400;
-    width: calc(100% - 50px);
+li {
+  display: inline-block;
 }
 
-.botao-busca{
-    border: none;
-    outline: none;
-    padding: 10px;
-    border-radius: 50px;
-    cursor: pointer;
-    float: right;
-    background: #7c7c7c2b;
+.inscreva-se-btn {
+  border: 2px solid #e86d24;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.botao-busca:hover{
-    background: #E86D24;
+.inscreva-se-btn:hover {
+  background: #e86d24;
+  color: white;
+  transition: 0.3s all;
 }
 
-.img-busca{
-    width: 24px;
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-.cidade{
-    color: white;
-    font-size: 24px;
-    font-weight: 300;
+.churros {
+  width: 60px;
+  height: 60px;
 }
 
-.temp{
-    font-size: 20px;
-    color: white;
-    margin-top: 20px;
+main {
+  height: 100vh;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.caixa-menor{
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    color: white;
-    gap: 20px;
+.caixa-maior {
+  background: linear-gradient(80deg, rgb(37, 50, 230), rgb(129, 40, 212));
+  border-radius: 25px;
+  padding: 20px;
+  width: 50%;
+  height: 250px;
+  box-shadow: 3px 3px 8px rgb(49, 49, 49);
 }
 
-.umidade{
-    color:white;
-    margin-top: 20px;
+.caixa-media {
+  margin-top: 30px;
 }
 
-.texto-previsao{
-    text-transform: capitalize;
+.caixa-maior input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: #6b6b6b6c;
+  color: white;
+  font-weight: 400;
+  width: calc(100% - 50px);
+}
+
+.botao-busca {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  float: right;
+  background: #7c7c7c2b;
+}
+
+.botao-busca:hover {
+  background: #e86d24;
+}
+
+.img-busca {
+  width: 24px;
+}
+
+.cidade {
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.temp {
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+}
+
+.caixa-menor {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  color: white;
+  gap: 20px;
+}
+
+.umidade {
+  color: white;
+  margin-top: 20px;
+}
+
+.texto-previsao {
+  text-transform: capitalize;
 }

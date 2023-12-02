@@ -1,7 +1,11 @@
-:root{
-  --fundo:rgb(10, 102, 109);
-  --gradient-header: linear-gradient(80deg, rgb(129, 40, 212), rgb(37, 50, 230));
-  --colorChurros: #E86D24;
+:root {
+  --fundo: rgb(10, 102, 109);
+  --gradient-header: linear-gradient(
+    80deg,
+    rgb(129, 40, 212),
+    rgb(37, 50, 230)
+  );
+  --colorChurros: #e86d24;
 }
 
 body {
@@ -10,7 +14,7 @@ body {
 body {
   background: rgb(39, 41, 41);
 }
-header{
+header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -24,40 +28,40 @@ header{
   z-index: 1000;
 }
 
-a{
+a {
   color: white;
   margin-left: 5px;
 }
 
-a:hover{
-  color: #E86D24;
+a:hover {
+  color: #e86d24;
   transition: 0.3s all;
 }
 
-li{
+li {
   display: inline-block;
 }
 
-.inscreva-se-btn{
+.inscreva-se-btn {
   border: 2px solid var(--colorChurros);
   padding: 10px;
   border-radius: 5px;
 }
 
-.inscreva-se-btn:hover{
+.inscreva-se-btn:hover {
   background: var(--colorChurros);
   color: white;
   transition: 0.3s all;
 }
 
-.title{
+.title {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
 
-.churros{
+.churros {
   width: 60px;
   height: 60px;
 }
@@ -147,5 +151,3 @@ div.item:hover {
 div.item img {
   width: 100%;
 }
-
-
