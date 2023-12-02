@@ -30,7 +30,7 @@ a {
 }
 
 a:hover {
-  color: #e86d24;
+  color: var(--colorChurros);
   transition: 0.3s all;
 }
 
@@ -39,13 +39,13 @@ li {
 }
 
 .inscreva-se-btn {
-  border: 2px solid #e86d24;
+  border: 2px solid var(--colorChurros);
   padding: 10px;
   border-radius: 5px;
 }
 
 .inscreva-se-btn:hover {
-  background: #e86d24;
+  background: var(--colorChurros);
   color: white;
   transition: 0.3s all;
 }
@@ -106,7 +106,7 @@ main {
 }
 
 .botao-busca:hover {
-  background: #e86d24;
+  background: var(--colorChurros);
 }
 
 .img-busca {
@@ -141,3 +141,97 @@ main {
 .texto-previsao {
   text-transform: capitalize;
 }
+
+@media(max-width: 810px){
+  .title h1{
+    font-size: 1.4rem;
+  }
+  .churros{
+    max-width: 50px;
+    height: 50px;
+  }
+
+  ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1rem;
+  }
+
+  .inscreva-se-btn{
+    padding: 6px;
+    width: 160px;
+    text-align: center;
+  }
+
+  .sobre{
+    width: 78px;
+  }
+}
+
+@media(max-width: 675px){
+  .title h1{
+    font-size: 18px;
+  }
+
+  .churros{
+    max-width: 28px;
+    height: 28px;
+  }
+
+  ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-size: 14px;
+  }
+
+  .inscreva-se-btn{
+    padding: 5px;
+    width: 140px;
+    text-align: center;
+  }
+
+  .galo{
+    font-size: 26px
+  }
+}
+
+  @media(max-width: 425px){
+    .title h1{
+      font-size: 12px;
+    }
+  
+    .churros{
+      max-width: 30px;
+      height: 30px;
+    }
+  
+    ul{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+      font-size: 10px;
+    }
+  
+    .inscreva-se-btn{
+      padding: 4px;
+      width: 80px;
+      border: 1px solid var(--colorChurros);
+    }
+  
+    .inscreva-se-btn li{
+      text-align: center;
+    }
+  
+    .sobre{
+      width: 34px;
+    }
+
+    .galo{
+      font-size: 24px;
+    }
+  }
