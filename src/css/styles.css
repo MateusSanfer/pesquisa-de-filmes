@@ -152,7 +152,30 @@ div.item img {
   width: 100%;
 }
 
-@media(max-width: 769px){
+@media(max-width: 810px){
+  .title h1{
+    font-size: 1.4rem;
+  }
+  .churros{
+    max-width: 50px;
+    height: 50px;
+  }
+
+  ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1rem;
+  }
+
+  .inscreva-se-btn{
+    padding: 6px;
+    width: 160px;
+  }
+}
+
+/* @media(max-width: 425px){
   .title h1{
     font-size: 12px;
   }
@@ -204,4 +227,4 @@ div.item img {
     font-size: 12px;
     padding: 5px;
   }
-} 
+}  */
