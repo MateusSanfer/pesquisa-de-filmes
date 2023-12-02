@@ -152,6 +152,11 @@ div.item img {
   width: 100%;
 }
 
+
+
+
+
+
 @media(max-width: 810px){
   .title h1{
     font-size: 1.4rem;
@@ -172,10 +177,56 @@ div.item img {
   .inscreva-se-btn{
     padding: 6px;
     width: 160px;
+    text-align: center;
+  }
+
+  .sobre{
+    width: 78px;
+  }
+
+  form{
+    max-width: 85%;
+    
+  }
+
+  form button{
+   width: auto;
+   font-size: 10px;
+   padding: 0 6px ;
+   
+  }
+
+  #pesquisa{
+    font-size: 17px;
   }
 }
 
-/* @media(max-width: 425px){
+@media(max-width: 675px){
+  .title h1{
+    font-size: 18px;
+  }
+
+  .churros{
+    max-width: 28px;
+    height: 28px;
+  }
+
+  ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-size: 14px;
+  }
+
+  .inscreva-se-btn{
+    padding: 5px;
+    width: 140px;
+    text-align: center;
+  }
+}
+
+@media(max-width: 425px){
   .title h1{
     font-size: 12px;
   }
@@ -196,6 +247,7 @@ div.item img {
   .inscreva-se-btn{
     padding: 4px;
     width: 80px;
+    border: 1px solid var(--colorChurros)
   }
 
   .inscreva-se-btn li{
@@ -211,10 +263,6 @@ div.item img {
     
   }
 
-  form button{
-   
-  }
-
   #pesquisa{
     font-size: 12px;
   }
@@ -227,4 +275,4 @@ div.item img {
     font-size: 12px;
     padding: 5px;
   }
-}  */
+} 
