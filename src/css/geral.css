@@ -5,6 +5,7 @@
       rgb(129, 40, 212),
       rgb(37, 50, 230)
     );
+    --fundoReverso: linear-gradient(80deg, rgb(37, 50, 230), rgb(129, 40, 212));
     --colorChurros: #e86d24;
   }
 

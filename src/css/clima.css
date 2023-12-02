@@ -15,7 +15,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(80deg, rgb(129, 40, 212), rgb(37, 50, 230));
+  background: var(--gradient-header);;
   color: white;
   padding: 10px;
   position: fixed;
@@ -71,7 +71,7 @@ main {
 }
 
 .caixa-maior {
-  background: linear-gradient(80deg, rgb(37, 50, 230), rgb(129, 40, 212));
+  background: var(--fundoReverso);
   border-radius: 25px;
   padding: 20px;
   width: 50%;
