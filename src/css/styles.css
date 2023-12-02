@@ -167,7 +167,7 @@ div.item img {
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    font-size: 7px;
+    font-size: 10px;
   }
 
   .inscreva-se-btn{
@@ -188,15 +188,19 @@ div.item img {
     
   }
 
+  form button{
+   
+  }
+
   #pesquisa{
-    font-size: 9px;
+    font-size: 12px;
   }
 
   .galo{
     font-size: 24px;
   }
   .item{
-    max-width: 100px;
+    max-width: 120px;
     font-size: 12px;
     padding: 5px;
   }
