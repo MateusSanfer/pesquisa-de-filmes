@@ -151,3 +151,53 @@ div.item:hover {
 div.item img {
   width: 100%;
 }
+
+@media(max-width: 769px){
+  .title h1{
+    font-size: 12px;
+  }
+
+  .churros{
+    max-width: 30px;
+    height: 30px;
+  }
+
+  ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-size: 7px;
+  }
+
+  .inscreva-se-btn{
+    padding: 4px;
+    width: 80px;
+  }
+
+  .inscreva-se-btn li{
+    text-align: center;
+  }
+
+  .sobre{
+    width: 34px;
+  }
+
+  form{
+    max-width: 85%;
+    
+  }
+
+  #pesquisa{
+    font-size: 9px;
+  }
+
+  .galo{
+    font-size: 24px;
+  }
+  .item{
+    max-width: 100px;
+    font-size: 12px;
+    padding: 5px;
+  }
+} 
