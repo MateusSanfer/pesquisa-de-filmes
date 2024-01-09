@@ -2,16 +2,22 @@
 body {
   background: rgb(39, 41, 41);
 }
-header {
+
+/* header {
+  position: relative;
+  padding: 0 2rem;
+} */
+.navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  
+  width: 100%;
   background: var(--gradient-header);
   color: white;
   padding: 10px;
   position: fixed;
-  width: 100%;
   top: 0;
   z-index: 1000;
 }
@@ -30,23 +36,24 @@ li {
   display: inline-block;
 }
 
-.inscreva-se-btn {
-  border: 2px solid var(--colorChurros);
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.inscreva-se-btn:hover {
-  background: var(--colorChurros);
-  color: white;
-  transition: 0.3s all;
-}
-
 .title {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu .inscreva-se-btn {
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .churros {
@@ -105,10 +112,18 @@ form button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  outline: none;
+  transition: scale 0.2 ease;
 }
 
 form button:hover {
   background-color: var(--colorChurros);
+  scale: 1.05;
+}
+
+/* Mostra um efeito de clique */
+form button:active{
+  scale:0.95; 
 }
 
 div.lista {
