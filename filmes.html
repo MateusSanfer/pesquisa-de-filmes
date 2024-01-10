@@ -15,10 +15,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="src/css/clima.css" />
+    <link rel="stylesheet" href="./src/css/filmes.css" />
     <link rel="stylesheet" href="src/css/reset.css" />
     <link rel="stylesheet" href="src/css/geral.css" />
-    <title>Churros Clima</title>
+    <title>Famoso Churros Filmes</title>
   </head>
   <body>
     <header>
@@ -29,12 +29,12 @@
             src="src/images/logoChurros-removebg-preview.png"
             alt=""
           />
-          <h1>Famoso Churros Clima Tempo</h1>
+          <h1>Famoso Churros Filmes</h1>
         </div>
         <ul class="links">
           <li><a href="index.html">Início</a></li>
-          <li><a href="filmes.html">Filmes</a></li>
-          <li><a href="sobreMim.html" class="sobre">Sobre mim</a></li>
+          <li><a href="clima.html">Clima</a></li>
+          <li><a class="sobre" href="sobreMim.html">Sobre mim</a></li>
           <li><a class="inscreva-se-btn" href="#">Já tem uma conta?</a></li>
         </ul>
         <div class="toggle_btn">
@@ -42,36 +42,39 @@
         </div>
       </nav>
       <nav class="dropdown_menu">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="filmes.html">Filmes</a></li>
-        <li><a href="sobreMim.html" class="sobre">Sobre mim</a></li>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="clima.html">Clima</a></li>
+        <li><a class="sobre" href="sobreMim.html">Sobre mim</a></li>
         <li><a class="inscreva-se-btn" href="#">Já tem uma conta?</a></li>
       </nav>
     </header>
 
-    <h2 class="galo"><span class="saudacao"></span>, bem-vindo!</h2>
-    <main>
-      <div class="caixa-maior">
-        <input
-          type="text"
-          class="input-cidade"
-          placeholder="Digite o local desejado"
-        />
-        <button class="botao-busca">
-          <img src="src/images/favicon-32x32.png" class="img-busca" />
-        </button>
+    <div class="subTitle">
+      <h2 class="galo"><span class="saudacao"></span>, bem-vindo!</h2>
+      <form>
+        <input id="pesquisa" placeholder="Digite o nome do filme" />
+        <button>Pesquisa</button>
+      </form>
+    </div>
 
-        <div class="caixa-media">
-          <h2 class="cidade"></h2>
-          <p class="temp"></p>
-          <div class="caixa-menor">
-            <p class="texto-previsao"></p>
-          </div>
-        </div>
-      </div>
-    </main>
-
+    <div class="lista"></div>
+    <script src="src/js/script.js"></script>
     <script src="src/js/saudacao.js"></script>
     <script src="src/js/navbar.js"></script>
+
+    <!-- <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script> -->
   </body>
 </html>

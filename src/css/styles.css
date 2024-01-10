@@ -1,156 +1,60 @@
-
 body {
-  background: rgb(39, 41, 41);
+  height: 100vh;
+  background-color: #1b1f2c;
+  background-image: url('https://media.discordapp.net/attachments/953413844183683082/1194406041149001879/holocore_a_advertisement_poster_for_a_tantra_festival_during_th_7a66993b-bc7c-487d-a3b9-9d4d41758955.png?ex=65b03c4f&is=659dc74f&hm=b723081677fba1356fa88e2ad9da58bb816079402a8feb601235ca4f68e88366&=&format=webp&quality=lossless&width=671&height=671');
+  background-size: cover;
+  background-position: center;
 }
 
-/* header {
-  position: relative;
-  padding: 0 2rem;
-} */
-.navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  
-  width: 100%;
-  background: var(--gradient-header);
-  color: white;
-  padding: 10px;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-}
+
 
 a {
-  color: white;
-  margin-left: 5px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 a:hover {
   color: #e86d24;
-  transition: 0.3s all;
 }
 
-li {
-  display: inline-block;
+header {
+  position: relative;
+  padding: 0 1rem;
 }
 
-.title {
+.navbar {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.dropdown_menu li {
-  padding: 0.7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.dropdown_menu .inscreva-se-btn {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-}
-
-.churros {
-  width: 60px;
+  justify-content: space-between;
+  width: 100%;
   height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
 }
 
-.subTitle {
-  display: flex;
-  flex-wrap: wrap;
+.title a {
+  font-size: 2rem;
   align-items: center;
   justify-content: center;
-  padding: 10px;
-  margin-top: 60px;
 }
 
-.galo {
+.navbar .links {
   display: flex;
+  gap: 2rem;
+  justify-content: center;
   align-items: center;
-  justify-content: center;
-  margin-left: 20px;
-  margin-top: 20px;
-  margin-right: 0;
-  color: aliceblue;
-  font-size: 30px;
 }
 
-form {
+.dropdown_menu.open {
+  height: auto;
+  padding: 20px;
+}
+
+.dados-ul{
   display: flex;
-  margin: 15px 10px 0 10px;
-  padding: 10px;
-  width: 100%;
-  border-radius: 9px;
-  background-color: whitesmoke;
-  box-shadow: 2px 2px 6px rgb(27, 24, 24);
+  flex-direction: column;
+  align-items: start ;
 }
 
-form input {
-  margin: 10px;
-  padding: 5px;
-  border: none;
-  outline: none;
-  flex: 1;
-  background: transparent;
-  color: rgb(17, 17, 17);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-form button {
-  padding: 5px 10px;
-  background-color: rgb(129, 40, 212);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  outline: none;
-  transition: scale 0.2 ease;
-}
-
-form button:hover {
-  background-color: var(--colorChurros);
-  scale: 1.05;
-}
-
-/* Mostra um efeito de clique */
-form button:active{
-  scale:0.95; 
-}
-
-div.lista {
-  margin-top: 10px;
-  padding: 5px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-div.item {
-  text-align: center;
-  padding: 10px;
-  width: 200px;
-  box-shadow: 2px 2px 6px rgb(27, 24, 24);
-  margin: 5px;
-  border-radius: 8px;
-  background: white;
-  transform: scale(1.1) 0.8s;
-}
-
-div.item:hover {
-  background-color: rgb(151, 72, 224);
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-div.item img {
-  width: 100%;
-}

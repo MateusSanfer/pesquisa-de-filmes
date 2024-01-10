@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <link
-      rel="shortcut icon"
-      href="src/images/faviconchurros.ico"
-      type="image/x-icon"
-    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -15,66 +10,125 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./src/css/styles.css" />
     <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/styles.css" />
     <link rel="stylesheet" href="src/css/geral.css" />
-    <title>Famoso Churros Filmes</title>
+
+    <title>Mateus Sanfer</title>
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div class="title">
-          <img
-            class="churros"
-            src="src/images/logoChurros-removebg-preview.png"
-            alt=""
-          />
-          <h1>Famoso Churros Filmes</h1>
+          <a href="#">Olá, Seja Bem-Vindo</a>
         </div>
+
         <ul class="links">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="clima.html">Clima</a></li>
-          <li><a class="sobre" href="sobreMim.html">Sobre mim</a></li>
-          <li><a class="inscreva-se-btn" href="#">Já tem uma conta?</a></li>
+          <li><a href="#inicio" onclick="selecionar()">Início</a></li>
+          <li><a href="#sobremim" onclick="selecionar()">Sobre Mim</a></li>
+          <li><a href="#skills" onclick="selecionar()">Skills</a></li>
+          <li><a href="#curriculo" onclick="selecionar()">Curriculo</a></li>
+          <li><a href="#portifolio" onclick="selecionar()">Portifolio</a></li>
+          <li><a href="#contato" onclick="selecionar()">Contato</a></li>
+            <a href="#" class="inscreva-se-btn">Gostaria de me Contratar?</a>
+          </li>
         </ul>
         <div class="toggle_btn">
           <i class="fa-solid fa-bars"></i>
         </div>
       </nav>
       <nav class="dropdown_menu">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="clima.html">Clima</a></li>
-        <li><a class="sobre" href="sobreMim.html">Sobre mim</a></li>
-        <li><a class="inscreva-se-btn" href="#">Já tem uma conta?</a></li>
+        <li><a href="#inicio" onclick="selecionar()">Início</a></li>
+        <li><a href="#sobremim" onclick="selecionar()">Sobre Mim</a></li>
+        <li><a href="#skills" onclick="selecionar()">Skills</a></li>
+        <li><a href="#curriculo" onclick="selecionar()">Curriculo</a></li>
+        <li><a href="#portifolio" onclick="selecionar()">Portifolio</a></li>
+        <li><a href="#contato" onclick="selecionar()">Contato</a></li>
+        <li><a href="#" class="inscreva-se-btn">Gostaria de me Contratar?</a></li>
       </nav>
     </header>
 
-    <div class="subTitle">
-      <h2 class="galo"><span class="saudacao"></span>, bem-vindo!</h2>
-      <form>
-        <input id="pesquisa" placeholder="Digite o nome do filme" />
-        <button>Pesquisa</button>
-      </form>
-    </div>
+    <main class="contain">
+      <section id="inicio" class="inicio">
+        <div class="content-banner">
+          <div class="content-img">
+            <img
+              src="src/images/perfil.png"
+              alt="Minha-foto"
+              style="width: 200px"
+            />
+          </div>
+          <h1><span>Mateus Sanfer</span></h1>
+          <h2>Desenvolvedor de Sistemas</h2>
+          <div class="redes-sociais">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </section>
 
-    <div class="lista"></div>
-    <script src="src/js/script.js"></script>
-    <script src="src/js/saudacao.js"></script>
-    <script src="src/js/navbar.js"></script>
+      <section id="sobremim" class="sobremim">
+        <div class="content-seccion">
+          <h2>Sobre Mim</h2>
+          <p>
+            <span>Olá, Sou Mateus Sanfer.</span>Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Voluptas voluptatibus recusandae
+            perspiciatis praesentium mollitia fuga libero, quos, nobis nam totam
+            harum omnis dolorum eos voluptatum dolor sequi hic odio expedita!
+          </p>
+          <div class="fila">
 
-    <!-- <script>
-      const toggleBtn = document.querySelector(".toggle_btn");
-      const toggleBtnIcon = document.querySelector(".toggle_btn i");
-      const dropDownMenu = document.querySelector(".dropdown_menu");
+            <div class="col">
 
-      toggleBtn.onclick = function () {
-        dropDownMenu.classList.toggle("open");
-        const isOpen = dropDownMenu.classList.contains("open");
+              <h3>Dados Perssoais</h3>
+              <ul class="dados-ul">
+                <li>
+                  <strong>Aniversário:</strong>
+                  04/43/5432
+                </li>
+                <li><strong>Cidade:</strong> Salvador</li>
+              </ul>
+            </div>
 
-        toggleBtnIcon.classList = isOpen
-          ? "fa-solid fa-xmark"
-          : "fa-solid fa-bars";
-      };
-    </script> -->
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <div class="content-seccion">
+          <h2>Skills</h2>
+          <div class="fila">
+
+            <div class="col">
+              <h3>Habilidades Técnicas</h3>
+              <div class="skill">
+                <span>JavaScript</span>
+                <div class="barra-skill">
+                  <span>50%</span>
+              <div class="skill">
+                <span>Banco de Dados</span>
+                <div class="barra-skill">
+                  <span>40%</span>
+              <div class="skill">
+                <span>Java</span>
+                <div class="barra-skill">
+                  <span>20%</span>
+                </div>
+
+              </div>
+              
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+    </main>
+
+    <script src="/src/js/index.js"></script>
+    <script src="/src/js/navbar.js"></script>
   </body>
 </html>

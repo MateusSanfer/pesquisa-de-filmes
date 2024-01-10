@@ -24,6 +24,11 @@ body {
   z-index: 1000;
 }
 
+.dropdown_menu.open {
+  height: 210px;
+  padding: 20px;
+}
+
 a {
   color: white;
   margin-left: 5px;
